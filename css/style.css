@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    overflow-y: hidden;
+}
+#game-container {
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    margin-top: 10vh;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden; /* Ensure that moving items do not overflow */
+}
+.alphabet {
+    position: absolute;
+    font-size: 10vw;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Initially hidden */
+    z-index: 100000;
+}
+#score, #timer, #high-score {
+    font-size: 3vw;
+    color: #666;
+    position: absolute;
+}
+#score {
+    top: 10%;
+    left: 5%;
+}
+#timer {
+    top: 10%;
+    right: 5%;
+}
+#high-score {
+    bottom: 5%;
+    left: 5%;
+    font-size: 2.5vw;
+    color: #888;
+}
